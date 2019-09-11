@@ -16,7 +16,6 @@ namespace D1
             int posCount = 0;
             int zeroCount = 0;
             int evenCount = 0;
-            int lastNumber = int.MinValue;
             Boolean increasingOrder = true;
             int largest = int.MinValue;
             int smallest = int.MaxValue;
@@ -32,9 +31,8 @@ namespace D1
                     zeroCount++;
                 if (ans % 2 == 0)
                     evenCount++;
-                if (ans < lastNumber)
+                if (ans < largest)
                     increasingOrder = false;
-                lastNumber = ans;
                 if (ans > largest)
                     largest = ans;
                 if (ans < smallest)
