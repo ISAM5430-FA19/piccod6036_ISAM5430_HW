@@ -45,13 +45,13 @@ namespace D1
                     sum -= ans;
 
             }
-            Console.WriteLine("The number of positive numbers is " + posCount);
-            Console.WriteLine("The number of zeros is " + zeroCount);
-            Console.WriteLine("The number of even numbers is " + evenCount);
-            Console.WriteLine("The numbers " + (increasingOrder ? "are" : "are not") + " in increasing order");
-            Console.WriteLine("The largest number is " + largest);
-            Console.WriteLine("The smallest number is " + smallest);
-            Console.WriteLine("The two halves " + (sum == 0 ? "have" : "don't have") + " equal sums");
+            Console.WriteLine($"The number of positive numbers is {posCount}");
+            Console.WriteLine($"The number of zeros is {zeroCount}");
+            Console.WriteLine($"The number of even numbers is {evenCount}");
+            Console.WriteLine($"The numbers {(increasingOrder ? "are" : "are not")} in increasing order");
+            Console.WriteLine($"The largest number is {largest}");
+            Console.WriteLine($"The smallest number is {smallest}");
+            Console.WriteLine($"The two halves {(sum == 0 ? "have" : "don't have")} equal sums");
             
             Console.ReadLine();
 
